@@ -37,7 +37,9 @@
 
 @media (min-width: 1296px) {
   .main-menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }
 

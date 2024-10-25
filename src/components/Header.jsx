@@ -1,10 +1,16 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
 
 const Header = () => {
   return (
-  
-  <div>Header</div>
+    <>
+      <div className="background-gradient">
+        <Navbar />
+        <Hero />
+      </div>
 
+    </>
   )
 };
 
