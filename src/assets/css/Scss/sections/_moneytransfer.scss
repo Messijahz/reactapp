@@ -1,0 +1,123 @@
+#moneytransfer {
+  display: none;
+  width: 1296px;
+  margin-block: 7rem 7rem;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  a {
+    color: var(--color-white);
+  }
+
+  @media (min-width: 1296px) {
+    display: grid;
+  }
+}
+
+.money-transfer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "textcontent1 images1"
+    "images2 textcontent2";
+  gap: 8rem;
+}
+
+.money-information1 {
+  grid-area: textcontent1;
+  width: 400px;
+  height: 460px;
+  text-align: left;
+  align-content: center;
+}
+
+.money-images1 {
+  grid-area: images1;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.money-images2 {
+  grid-area: images2;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.money-container {
+  display: grid;
+  grid-area: textcontent2;
+  text-align: left;
+  width: 500px;
+  height: 500px;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "headline headline";
+}
+
+.moneytransfer-text {
+  color: var(--color-text700-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.money-information2 {
+  grid-area: headline;
+  align-content: end;
+  margin-bottom: 1rem;
+}
+
+.moneytransfer-logos-container {
+  width: 240px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.moneytransfer-logos {
+  display: grid;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-secondarybg);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.money-checked-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+
+.money-checked-list li {
+  background-image: url("/pictures/bx-check-circle.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-left: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.inner-image2-top {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  bottom: 10px;
+  right: -63px;
+}
+
+.inner-image1-top {
+  position: absolute;
+  width: 260px;
+  height: 117px;
+  bottom: -50px;
+  right: -60px;
+}

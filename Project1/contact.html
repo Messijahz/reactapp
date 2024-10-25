@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a576612222.css"
+      crossorigin="Anonymous" />
+      
+    <title>Silicon</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+<!-- Navbar -->
+
+        <nav>
+            <div class="navbar container">
+              <div class="main-menu">
+        
+                <a href="index.html" class="display-flex">
+                    <div class="mainlogo">
+                      
+                      <img src="pictures/Logo.svg" alt="Picture of the Silicon logotype" />
+                    <h2 class="mainlogo">Silicon</h2></a>
+                    <a class="features-menu" href="/index.html#features"><span class="features-link underlined-link">Features</span></a>
+                    <a class="features-menu" href="contact.html"><span class="features-link underlined-link">Contact</span></a>
+                  </div>
+                </div>
+              
+              
+              <div class="navigation">
+                <div class="navigation-tablet">
+                  <p class="darkmode">Dark Mode</p>
+                  <div class="toggle-switch">
+                    <div class="toggle-circle"></div>
+                  </div>
+                </div>
+                <a id="auth-signin" href="#" class="btn-primary text-signin">
+                  <i class="fa-thin fa-user-large"></i>
+                  <span class="underlined-link">Sign in / up</span>
+                  </a>
+                  <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+              </div>
+              <script src="toggle.js"></script>
+            </div>
+          </nav>
+
+
+
+
+
+
+
+
+
+        <div class="navbar2 container">
+          <i class="fa-solid fa-house"></i>
+          <a href="index.html"> <p>Homepage</p></a>
+
+          <i class="fa-solid fa-angles-right"></i>
+          <a href="contact.html"> <p>Contact</p></a>
+        </div>
+
+
+
+
+
+      
+      <section id="contact" class="container">
+        <div class="contact-info-container">
+            <div class="header-contact">
+                <h1 class="text-left hide-me-mobile-tablet">Contact Us</h1>
+            </div>
+            <div class="contact-card-container">
+                <div class="contact-card">
+                    <div class="circle">
+                        <img
+                        src="pictures/bx-envelope.svg"
+                        alt="A picture of a letter" />
+                    </div>
+                    <div class="contact-text">
+                        <h3 class="text-left">Email us</h3>
+                        <p>
+                         Please feel free to drop us a line. We will respond as soon as
+                         possible.
+                        </p>
+                        <a href="#" class="purple-text">
+                            <span class="underlined-link">Leave a message</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+          <div class="contact-card-container">
+            <div class="contact-card">
+              <div class="circle">
+                <img src="pictures/people-icon.svg" alt="A group of people" />
+              </div>
+              <div class="contact-text">
+                <h3 class="text-left">Careers</h3>
+                <p>
+                  Sit ac ipsum leo lorem magna nunc mattis maecenas non
+                  vestibulum.
+                </p>
+                <a href="#" class="purple-text">
+                  <span class="underlined-link">Send an application</span>
+                  <i class="fa-solid fa-arrow-right padding-bottom-6"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="consulation-box">
+            <h2>Get Online Consultation</h2>
+
+            <form action="/submit" method="POST">
+              <label for="name">Full name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="speciality">Specialist</label>
+              <select id="speciality" name="speciality" required>
+                <option value="" disabled selected></option>
+                <option value="webdev">Web Development</option>
+                <option value="graphicdesign">Graphic Design</option>
+                <option value="datascience">Data Science</option>
+                <option value="marketing">Marketing</option>
+              </select>
+
+              <button type="submit" class="btn-primary">Make an appointment</button>
+            </form>
+          </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      
+      <section id="contact-address">
+        <div class="address-container container">
+        <div id="map-info">
+            <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.249394964277!2d-122.41400263221898!3d37.72848629910108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f02449cda7b%3A0x56b4d414afddd65!2sSilver%20Terrace%2C%20San%20Francisco%2C%20Kalifornien%2094124%2C%20USA!5e0!3m2!1ssv!2sse!4v1729352777968!5m2!1ssv!2sse"
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+        </div>
+     
+
+
+    
+        <div class="address-info">
+            <div class="address-box">
+                <h4>Medical Center 1</h4>
+                    <div class="info-row">
+                        <img src="/pictures/bx-map.svg" alt="map icon">
+                        <span>4517 Washington Ave. Manchester, Kentucky 3949span</span>
+                    </div>
+                <div class="info-row">
+                    <img src="/pictures/bx-phone-call.svg" alt="phone icon">
+                    <span>(406) 555-0120</span>
+                </div>
+                <div class="info-row">
+                    <img src="/pictures/bx-time-five.svg" alt="clock icon">
+                    <span class="strong">Mon - Fri:</span><span> 9:00 am - 22:00 am</span>
+                </div>
+                <div class="info-row">
+                    <span class="strong ml28px">Sat - Sun:</span><span> 9:00 am - 20:00 am</span>
+                </div>
+            </div>
+
+            <div class="address-box">
+                <h4>Medical Center 2</h4>
+                    <div class="info-row">
+                        <img src="/pictures/bx-map.svg" alt="map icon">
+                        <span>2464 Royal Ln. Mesa, New Jersey 45463</span>
+                    </div>
+                    <div class="info-row">
+                        <img src="/pictures/bx-phone-call.svg" alt="phone icon">
+                        <span>(406) 544-0123</span>
+                    </div>
+                    <div class="info-row">
+                        <img src="/pictures/bx-time-five.svg" alt="time icon">
+                        <span class="strong">Mon - Fri:</span><span> 9:00 am - 22:00 am</span>
+                    </div>
+                    <div class="info-row ml28px">
+                        <span class="strong">Sat - Sun:</span><span> 9:00 am - 20:00 am</span> 
+                    </div>
+            </div>
+<div class="social-media-box">
+<div class="social-media">
+<img src="/pictures/bxl-facebook-square.svg" alt="">
+</div>
+
+<div class="social-media">
+    <img src="/pictures/bxl-instagram-alt.svg" alt="">
+    </div>
+
+    <div class="social-media">
+        <img src="/pictures/bxl-twitter.svg" alt="">
+        </div>
+
+        <div class="social-media">
+            <img src="/pictures/bxl-youtube.svg" alt="">
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+</div>
+</div>
+  </body>
+  <footer>
+    <p>© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+  </footer>
+</html>

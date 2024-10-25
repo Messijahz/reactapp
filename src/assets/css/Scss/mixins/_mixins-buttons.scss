@@ -1,0 +1,9 @@
+@mixin button-colors($bg-color, $text-color, $hover-color, $hover-text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $bg-hover-color;
+    color: $hover-text-color;
+  }
+}

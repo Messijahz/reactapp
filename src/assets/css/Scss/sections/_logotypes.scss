@@ -1,0 +1,43 @@
+.logotypes-container {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2.5rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1296px) {
+    gap: 1rem;
+    padding-block: 6rem 1.5rem;
+  }
+}
+
+.logotype-box {
+  display: none;
+  width: 187px;
+  height: 90px;
+
+  @media (min-width: 768px) {
+    display: block;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-fourthbg);
+    padding: 1.5rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  @media (min-width: 1296px) {
+    padding: 1.5rem 0;
+    padding-inline: 1.5rem;
+  }
+}
+
+.logotype-box-desk {
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}

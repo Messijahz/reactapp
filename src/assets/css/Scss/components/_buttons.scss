@@ -1,0 +1,265 @@
+.toggle-switch {
+  width: 46px;
+  height: 24px;
+  background-color: var(--color-gray600);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s ease;
+}
+
+.toggle-switch.active {
+  background-color: var(--color-primary);
+}
+
+.toggle-switch.active .toggle-circle {
+  left: 24px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gray600);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.btn-moneytransfer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 44px;
+  width: 160px;
+  font-size: 14px;
+}
+
+.btn-moneytransfer i {
+  margin-left: 1rem;
+}
+
+.btn-primary i {
+  margin-right: 0.5rem;
+}
+
+.flex-buttons-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.btn-container {
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 10px;
+  background-color: var(--color-btn-primary);
+  height: 50px;
+  width: 365px;
+  justify-content: center;
+  margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    height: 45px;
+    width: 150px;
+  }
+}
+
+.btn-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 33px;
+  color: var(--color-button-text);
+  font-weight: 700;
+  width: 128px;
+  font-style: normal;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  align-items: flex-start;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.btn-text2 {
+  line-height: 100%;
+  display: flex;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-download-app {
+  background-color: var(--color-gray900);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-download-app:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.btn-mobile {
+  background-color: var(--color-btn-primary);
+  border-radius: 10px;
+  width: 365px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: 768px) {
+    background-color: var(--color-btn-primary);
+    border-radius: 10px;
+    width: 135px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.android-btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apple-btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-circle {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-gray900);
+}
+
+.btn-circle a:hover {
+  text-decoration: none;
+}
+
+.arrow-down-btn-grey {
+  background-color: var(--color-gray100);
+  border-radius: 1px solid;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.arrow-down-btn-blue {
+  background-color: var(--color-primary);
+  border-radius: 1px solid;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  box-shadow: 0px -8px 15px rgba(82, 48, 185, 0.2);
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  height: 50px;
+  width: 160px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-block: 3rem;
+  border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.contact-btn:hover {
+  background-color: #4c51bf;
+  text-decoration: underline;
+}
+
+.contact-btn:active {
+  background-color: #3730a3;
+}
+
+.contact-btn-subscribe {
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  max-width: 114px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0 10px 10px 0;
+}
+
+.contact-btn-subscribe:hover {
+  background-color: var(--color-gray600);
+}

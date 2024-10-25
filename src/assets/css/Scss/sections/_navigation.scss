@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin-block: 1rem;
+  padding-inline: 1rem;
+  gap: 1rem;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  margin-block: 1rem;
+  gap: 1rem;
+  font-size: 14px;
+}
+
+.features-link {
+  color: var(--color-text700-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.features-menu {
+  display: none;
+}
+
+@media (min-width: 1296px) {
+  .features-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1296px) {
+  .main-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-block: 2rem;
+    padding-inline: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1296px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-block: 2rem;
+    padding-inline: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+.mainlogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.mainlogo h2 {
+  font-size: 21px;
+  color: var(--color-headline);
+  margin-right: 3rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: left;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1296px) {
+  .navigation {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navigation-tablet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.darkmode {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .darkmode {
+    display: block;
+    font-weight: 600;
+    color: var(--color-gray700);
+  }
+}
+
+.hamburger i {
+  color: var(--color-text);
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 1rem;
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.text-signin {
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -1,0 +1,106 @@
+:root {
+  /* Color Primary */
+  --color-primary: #6366f1;
+
+  /* Background colors */
+  --color-primarybg: #fff;
+  --color-secondarybg: #F3F6FF;
+  --color-thirdbg: #fff;
+  --color-fourthbg: #fff;
+  --color-border: #D4D7E5;
+  --color-secondaryborder: #D4D7E5;
+  --color-input: #FFF;
+  --color-boxshadow: 8px 8px 12px 1px rgba(19, 16, 34, 0.06),
+    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  --color-Gradient: radial-gradient(118% 116.18% at 50% 100%,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(218, 70, 239, 0.05) 41.83%,
+      rgba(241, 244, 253, 0.07) 82.52%);
+
+  /* Color grayscale */
+  --color-gray900: #0b0f19;
+  --color-gray800: #33354d;
+  --color-gray700: #565973;
+  --color-gray600: #9397ad;
+  --color-gray500: #b4b7c9;
+  --color-gray400: #d4d7e5;
+  --color-gray300: #e2e5f1;
+  --color-gray200: #eff2fc;
+  --color-gray100: #f3f6ff;
+  --color-white: #ffffff;
+  --color-headline: #0b0f19;
+  --color-text: #565973;
+  --color-text600-white: #9397ad;
+  --color-text700-white: #565973;
+  --color-button-text: #fff;
+
+  /* System colors: */
+  --color-system-error: #ef4444;
+  --color-system-success: #22c55e;
+  --color-system-warning: #ffba08;
+  --color-system-info: #4c82f7;
+
+  /* Buttons */
+  --color-btn-primary: #0b0f19;
+  --color-button-primary: border-radius: 8px;
+  background: var(--Brand-Primary, var(--color-primary));
+  --color-button-secondary: border-radius: 8px;
+  background: var(--Gray-200, #EFF2cdFC);
+
+  --container-padding: 1rem;
+  --transition-time: all 0.2s;
+}
+
+
+.dark {
+    color-scheme: dark;
+  
+    /* Color Primary */
+    --color-primary: #6366f1;
+  
+    /* Background colors */
+    --color-primarybg: #0c0f19;
+    --color-secondarybg: #161822;
+    --color-thirdbg: #1f212b;
+    --color-fourthbg: #131022;
+    --color-border: #FFFFFF26;
+    --color-bordersecondary: #e2e5f1;
+    --color-input: rgba(255, 255, 255, 0.02);
+    --color-boxshadow: 8px 8px 12px 1px rgba(19, 16, 34, 0.811),
+      0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    --color-Gradient: linear-gradient(0deg,
+        rgba(99, 102, 241, 0.10) 0%,
+        rgba(218, 70, 239, 0.05) 50%,
+        rgba(19, 16, 34, 0.01) 100%);
+  
+  
+    /* Color grayscale */
+    --color-gray900: #0b0f19;
+    --color-gray800: #33354d;
+    --color-gray700: #565973;
+    --color-gray600: #9397ad;
+    --color-gray500: #b4b7c9;
+    --color-gray400: #d4d7e5;
+    --color-gray300: #e2e5f1;
+    --color-gray200: #eff2fc;
+    --color-gray100: #f3f6ff;
+    --color-white: #ffffff;
+    --color-headline: #fff;
+    --color-text: #fff;
+    --color-text600-white: #FFFFFF80;
+    --color-text700-white: #FFFFFFB3;
+    --color-button-text: #33354d;
+  
+    /* System colors: */
+    --color-system-error: #ef4444;
+    --color-system-success: #22c55e;
+    --color-system-warning: #ffba08;
+    --color-system-info: #4c82f7;
+  
+    /* Buttons */
+    --color-btn-primary: #f3f6ff;
+    --color-button-primary: border-radius: 8px;
+    background: var(--Brand-Primary, var(--color-primary));
+    --color-button-secondary: border-radius: 8px;
+    background: #231f31;
+}

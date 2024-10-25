@@ -1,0 +1,143 @@
+#information {
+  background-color: var(--color-secondarybg);
+
+  h2 {
+    color: var(--color-headline);
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    color: var(--color-headline);
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    padding-inline: 60px;
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+
+  p {
+    color: var(--color-text700-white);
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 4rem;
+    padding-inline: 15px;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: 1296px) {
+    h2 {
+      font-size: 40px;
+      margin-block: 6rem 4rem;
+    }
+
+    p {
+      margin-bottom: 6rem;
+    }
+  }
+
+  .information-mobiles-container {
+    @media (min-width: 1296px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6rem;
+    }
+  }
+
+  .centermobile {
+    width: 202px;
+    height: auto;
+
+    @media (min-width: 1296px) {
+      width: 320px;
+      height: auto;
+    }
+  }
+}
+
+.information-text-container {
+  @media (min-width: 768px) {
+    padding-inline: 5rem;
+  }
+
+  @media (min-width: 1296px) {
+    padding-inline: 18rem;
+  }
+}
+
+.information-h3-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-h3-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-h3-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}
+
+.information-mobile-tablet {
+  @media (min-width: 1296px) {
+    display: none;
+  }
+}
+
+.information-tablet-desktop {
+  display: none;
+
+  @media (min-width: 1296px) {
+    display: block;
+  }
+}
+
+.tablet-image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    width: 200px;
+  }
+
+  @media (min-width: 1296px) {
+    display: inline-block;
+    width: 320px;
+    height: auto;
+  }
+}

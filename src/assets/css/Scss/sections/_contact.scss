@@ -1,0 +1,278 @@
+.wrapper {
+  background-color: var(--color-gray100);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1296px) {
+    width: 1296px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+
+    h1 {
+      font-size: 40px;
+      line-height: 140%;
+      text-align: left;
+      padding-block: 2rem;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 140%;
+      text-align: left;
+    }
+
+    h3 {
+      text-align: left;
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    p {
+      margin-block: 1rem;
+    }
+
+    i {
+      margin: 1.5rem;
+      font-size: 16px;
+    }
+  }
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-gray900);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.header-contact {
+  text-align: left;
+}
+
+.contact-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  height: 200px;
+  padding-block: 2rem;
+
+  @media (min-width: 1296px) {
+    width: 390px;
+    flex-direction: column;
+    padding-top: 0rem;
+    height: 630px;
+    gap: 0rem;
+  }
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+  width: 300px;
+
+  @media (min-width: 1296px) {
+    width: 400px;
+    padding-block: 1rem;
+  }
+}
+
+.contact-text {
+  padding-left: 1.5rem;
+}
+
+.consulation-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  padding-inline: 1rem;
+  margin: 1rem;
+  width: 550px;
+  height: 700px;
+  text-align: left;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
+    0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+
+  h2 {
+    margin-block: 5rem 2rem;
+  }
+
+  label,
+  input,
+  select {
+    display: block;
+    font-weight: 600;
+  }
+
+  input,
+  select {
+    width: 500px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-block: 0.5rem;
+    border: 1px solid var(--color-gray400);
+  }
+
+  label {
+    margin-top: 1.5rem;
+  }
+
+  select {
+    margin-bottom: 8rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: 500px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-block: 0.5rem;
+    border: 1px solid var(--color-gray400);
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1296px) {
+    position: absolute;
+    right: 38px;
+    top: 0;
+    width: 600px;
+    height: 700px;
+    padding-inline: 3rem;
+    text-align: left;
+  }
+}
+
+#contact-address {
+  background-color: var(--color-white);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  @media (min-width: 1296px) {
+    padding-top: 12rem;
+    padding-bottom: 20rem;
+  }
+}
+
+iframe {
+  width: 300px;
+  height: 580px;
+  border: none;
+
+  @media (min-width: 1296px) {
+    width: 600px;
+    height: 550px;
+  }
+}
+
+.address-container {
+  display: flex;
+  text-align: left;
+  gap: 3rem;
+  margin: auto;
+
+  @media (min-width: 1296px) {
+    gap: 7rem;
+  }
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.address-box {
+  margin-bottom: 3rem;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+
+  span {
+    color: var(--color-gray700);
+  }
+
+  span.strong {
+    color: var(--color-gray800);
+    font-weight: 900;
+  }
+}
+
+#map-info {
+  display: flex;
+  height: auto;
+}
+
+.ml28px {
+  margin-left: 28px;
+}
+
+.social-media-box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  @media (min-width: 1296px) {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray200);
+  width: 44px;
+  height: 44px;
+  border-radius: 0.8rem;
+}
