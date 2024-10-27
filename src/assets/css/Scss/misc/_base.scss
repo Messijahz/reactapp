@@ -87,3 +87,17 @@ body {
     max-width: 1296px;
   }
 }
+
+.error-message {
+  color: var(--color-system-error);
+  font-size: 12px;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.confirmation-message {
+  color: var(--color-system-success);
+  font-size: 12px;
+  margin-top: 4px;
+  position: absolute;
+}

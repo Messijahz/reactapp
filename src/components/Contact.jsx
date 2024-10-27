@@ -1,5 +1,6 @@
 import React from 'react'
 import Notification from '../assets/pictures/notification-icon-1.svg'
+import EmailForm from './HandleSubmit'
 
 const Contact = () => {
   return (
@@ -24,26 +25,8 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="subscribe-form">
-                        <form action="" method="get" className="contact-form">
-                        <label className="contact-form" htmlFor="email"></label>
-                        <div className="mail-icon-input">
-                            <input
-                            className="form-input"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder=" &#xf003;   Your Email"
-                            style={{ fontFamily: "Arial, 'FontAwesome'" }}
-                            required
-                            autoComplete="email"
-                            />
-                        </div>
-                        <button className="contact-btn-subscribe" type="submit">
-                        Subscribe
-                        </button>
-                        </form>
-                    </div>
+                    <EmailForm /> 
+                    
                 </div>
             </div>
         </div>
