@@ -3,9 +3,17 @@
   justify-content: space-between;
   align-items: center;
   height: auto;
-  margin-block: 1rem;
+  padding-block: 1rem;
   padding-inline: 1rem;
   gap: 1rem;
+}
+
+.navbarbg {
+  background-color: transparent;
+}
+
+.navbarbg-contact {
+  background-color: var(--color-secondarybg);
 }
 
 .navbar2 {
@@ -13,7 +21,7 @@
   justify-content: flex-start;
   align-items: center;
   height: auto;
-  margin-block: 1rem;
+  padding-block: 1rem;
   gap: 1rem;
   font-size: 14px;
 }
@@ -49,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     height: auto;
-    margin-block: 2rem;
+    padding-block: 2rem;
     padding-inline: 2rem;
     gap: 1rem;
   }
@@ -61,7 +69,6 @@
     justify-content: space-between;
     align-items: center;
     height: auto;
-    margin-block: 2rem;
     padding-inline: 1.5rem;
     gap: 1rem;
   }

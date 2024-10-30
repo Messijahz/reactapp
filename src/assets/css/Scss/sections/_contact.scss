@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
 }
 
 #contact {
@@ -126,6 +126,7 @@
 
   h2 {
     margin-block: 5rem 2rem;
+    color: black;
   }
 
   label,
@@ -137,6 +138,7 @@
 
   input,
   select {
+    background-color: white;
     width: 500px;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -180,7 +182,7 @@
 }
 
 #contact-address {
-  background-color: var(--color-white);
+  background-color: var(--color-thirdbg);
   padding-top: 8rem;
   padding-bottom: 8rem;
 

@@ -1,12 +1,18 @@
 import React from 'react'
 import LogoType from '../assets/pictures/Logo.svg'
 import ToggleSwitch from './ToggleSwitch.jsx'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+
 
 const Navbar = () => {
+
+    const location = useLocation()
+    const isContactPage = location.pathname === '/contact';
+
+
   return (
 
-    <nav>
+    <nav className={isContactPage ? 'navbarbg navbarbg-contact' : 'navbarbg'}>
         <div className="navbar container">
             <div className="main-menu">
                 <Link className="display-flex" to="/home">

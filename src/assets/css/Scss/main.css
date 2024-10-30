@@ -194,9 +194,17 @@ body {
   justify-content: space-between;
   align-items: center;
   height: auto;
-  margin-block: 1rem;
+  padding-block: 1rem;
   padding-inline: 1rem;
   gap: 1rem;
+}
+
+.navbarbg {
+  background-color: transparent;
+}
+
+.navbarbg-contact {
+  background-color: var(--color-secondarybg);
 }
 
 .navbar2 {
@@ -204,7 +212,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: auto;
-  margin-block: 1rem;
+  padding-block: 1rem;
   gap: 1rem;
   font-size: 14px;
 }
@@ -238,7 +246,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    margin-block: 2rem;
+    padding-block: 2rem;
     padding-inline: 2rem;
     gap: 1rem;
   }
@@ -249,7 +257,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    margin-block: 2rem;
     padding-inline: 1.5rem;
     gap: 1rem;
   }
@@ -923,7 +930,7 @@ body {
 }
 
 .money-checked-list li {
-  background-image: url("/pictures/bx-check-circle.svg");
+  background-image: url("../../../pictures/bx-check-circle.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
   padding-left: 1.8rem;
@@ -1505,7 +1512,7 @@ footer p {
 }
 
 .wrapper {
-  background-color: var(--color-gray100);
+  background-color: var(--color-secondarybg);
 }
 
 #contact {
@@ -1629,6 +1636,7 @@ footer p {
 }
 .consulation-box h2 {
   margin-block: 5rem 2rem;
+  color: black;
 }
 .consulation-box label,
 .consulation-box input,
@@ -1638,6 +1646,7 @@ footer p {
 }
 .consulation-box input,
 .consulation-box select {
+  background-color: white;
   width: 500px;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -1675,7 +1684,7 @@ footer p {
 }
 
 #contact-address {
-  background-color: var(--color-white);
+  background-color: var(--color-thirdbg);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
