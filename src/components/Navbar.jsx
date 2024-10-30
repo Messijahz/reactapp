@@ -1,5 +1,7 @@
 import React from 'react'
 import LogoType from '../assets/pictures/Logo.svg'
+import ToggleSwitch from './ToggleSwitch.jsx'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -7,24 +9,21 @@ const Navbar = () => {
     <nav>
         <div className="navbar container">
             <div className="main-menu">
-                <a href="index.html" className="display-flex">
+                <Link className="display-flex" to="/home">
                     <div className="mainlogo">
                         <img src={LogoType} />
                         <h2 className="mainlogo">Silicon</h2>
                     </div>
-                </a>
-                <a className="features-menu" href="#features"><span className="features-link underlined-link">Features</span></a>
-                <a className="features-menu" href="contact.html"><span className="features-link underlined-link">Contact</span></a>
+                </Link>
+                <NavLink className="features-menu" to="/#features"><span className="features-link underlined-link">Features</span></NavLink>
+                <NavLink className="features-menu" to="/contact"><span className="features-link underlined-link">Contact</span></NavLink>
             </div>
             
             <div className="navigation">
                 <div className="navigation-tablet">
-                    <p className="darkmode">Dark Mode</p>
-                        <div className="toggle-switch">
-                            <div className="toggle-circle">
 
-                            </div>
-                        </div>
+                    <ToggleSwitch />
+                    
                 </div>
                 <a id="auth-signin" href="#" className="btn-primary text-signin">
                 <i className="fa-thin fa-user-large"></i>
