@@ -1,12 +1,14 @@
 .wrapper {
   background-color: var(--color-secondarybg);
+  color: var(--color-darktheme-text);
 }
 
 #contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  color: var(--color-darktheme-text);
+  
   @media (min-width: 768px) {
     width: 768px;
     flex-direction: column;
@@ -18,6 +20,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    
 
     h1 {
       font-size: 40px;
@@ -114,7 +117,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-white);
+  background-color: var(--color-fifthbg);
+  color: var(--color-gray900);
   padding-inline: 1rem;
   margin: 1rem;
   width: 550px;
@@ -239,13 +243,17 @@ iframe {
   margin-bottom: 0.8rem;
 
   span {
-    color: var(--color-gray700);
+    color: var(--color-darktheme-text);
   }
 
   span.strong {
-    color: var(--color-gray800);
+    color: var(--color-darktheme-text);
     font-weight: 900;
   }
+}
+
+select {
+  color: var(--color-gray900);
 }
 
 #map-info {

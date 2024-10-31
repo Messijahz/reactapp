@@ -18,13 +18,14 @@
   }
 
   .open-box-info {
+    display: flex;
+    flex-direction: row;
     color: var(--color-text700-white);
     text-align: left;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    padding-bottom: 1rem;
   }
 
   h4 {
@@ -243,9 +244,6 @@
 }
 
 .information-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--color-thirdbg);
   border-bottom: 1px solid var(--color-border);
   cursor: pointer;
@@ -313,31 +311,33 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+}
 
-  @media (min-width: 768px) {
-    padding-bottom: 1.5rem;
-  }
-
-  @media (min-width: 1296px) {
-    padding-bottom: 1rem;
-  }
+.space {
+  display: flex;
+  justify-content: space-between;
 }
 
 .buttons-container-faq {
-  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+  
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hide-me-mobile {
       display: none;
     }
-  }
+}
 
-  @media (min-width: 768px) {
+ @media (min-width: 1296px) {
     .hide-me-tablet {
       display: none;
     }
-  }
 }
+
 
 .information-box:first-child {
   border-top-left-radius: 10px;
