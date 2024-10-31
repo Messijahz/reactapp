@@ -316,23 +316,47 @@ body {
     color: var(--color-gray700);
   }
 }
-.hamburger i {
-  color: var(--color-text);
-  font-size: 30px;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-@media (min-width: 1296px) {
-  .hamburger i {
-    display: none;
-  }
-}
-
 .text-signin {
   font-size: 14px;
   font-weight: 600;
 }
 
+.hamburger-menu {
+  position: relative;
+  color: var --color-border;
+  text-align: left;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-links {
+  position: absolute;
+  background-color: var(--color-secondarybg);
+  top: 45px;
+  right: 0;
+  width: 120px;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-links a {
+  display: block;
+  color: var(--color-text);
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+@media (min-width: 1296px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
 .hero-container {
   display: grid;
   gap: 2rem;

@@ -13,7 +13,7 @@ const AccordionItem = ({ question, answer }) => {
    
     <div className="information-box" onClick={toggleAccordion}>
         <div className="space">
-            <div class="buttons-container-faq">
+            <div className="buttons-container-faq">
             <h4>{question}</h4>
                 <button
                 onClick={toggleAccordion}

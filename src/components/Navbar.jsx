@@ -2,6 +2,7 @@ import React from 'react'
 import LogoType from '../assets/pictures/Logo.svg'
 import ToggleSwitch from './ToggleSwitch.jsx'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import HamburgerMenu from './Hamburger.jsx'
 
 
 const Navbar = () => {
@@ -35,9 +36,9 @@ const Navbar = () => {
                 <i className="fa-thin fa-user-large"></i>
                 <span className="underlined-link">Sign in / up</span>
                 </a>
-                <a href="#" className="hamburger">
-                <i className="fa-solid fa-bars"></i>
-                </a>
+
+                <HamburgerMenu />
+
             </div>
         </div>
     </nav>
