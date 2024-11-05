@@ -4,6 +4,7 @@ import ArrowUp from '../assets/pictures/arrow-up-info.svg'
 import PhoneCallIcon from '../assets/pictures/phonecallicon.svg'
 import ChatIcon from '../assets/pictures/chaticon.svg'
 import Accordion from './Accordion'
+import FaqList from './FaqList'
 
 const Faq = () => {
   return (
@@ -17,9 +18,7 @@ const Faq = () => {
                 </div>
             </div>
 
-
-            <Accordion />
-
+            <FaqList />
 
                 <div className="hide-me-mobile">
                     <div className="contact-box-container">
