@@ -14,7 +14,7 @@ const ContactAddress = () => {
         <div id="map-info">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6311.249394964277!2d-122.41400263221898!3d37.72848629910108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7f02449cda7b%3A0x56b4d414afddd65!2sSilver%20Terrace%2C%20San%20Francisco%2C%20Kalifornien%2094124%2C%20USA!5e0!3m2!1ssv!2sse!4v1729352777968!5m2!1ssv!2sse"
-              allowfullscreen="" 
+              allowFullScreen="" 
               loading="lazy">
             </iframe>
         </div>

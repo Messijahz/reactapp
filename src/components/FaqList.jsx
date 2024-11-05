@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import FaqItem from './FaqItem'
+import axios from 'axios'
 
 const FaqList = () => {
   const [faqItems, setFaqItems] = useState ([])
 
-  const fetchData = async () => {
+  const getDataUsingFetch = async () => {
     const res = await fetch('https://win24-assignment.azurewebsites.net/api/faq')
     const data = await res.json()
     setFaqItems(data)
   }
 
   useEffect(() => {
-    fetchData()
+    getDataUsingFetch()
   }, [])
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import EnvelopeIcon from '../assets/pictures/bx-envelope.svg'
 import PeopleIcon from '../assets/pictures/people-icon.svg'
+import ContactViewForm from './ContactViewForm'
 
 const ContactView = () => {
   return (
@@ -50,28 +51,8 @@ const ContactView = () => {
           </div>
         </div>
 
-          <div className="consulation-box">
-            <h2>Get Online Consultation</h2>
-
-            <form action="/submit" method="POST">
-              <label htmlFor="name">Full name:</label>
-              <input type="text" id="name" name="name" required />
-
-              <label htmlFor="email">Email address:</label>
-              <input type="email" id="email" name="email" required />
-
-              <label htmlFor="speciality">Specialist:</label>
-              <select id="speciality" name="speciality" required>
-                <option value="" disabled></option>
-                <option value="webdev">Web Development</option>
-                <option value="graphicdesign">Graphic Design</option>
-                <option value="datascience">Data Science</option>
-                <option value="marketing">Marketing</option>
-              </select>
-
-              <button type="submit" className="btn-primary">Make an appointment</button>
-            </form>
-          </div>
+        <ContactViewForm />
+        
       </section>
   )
 }
