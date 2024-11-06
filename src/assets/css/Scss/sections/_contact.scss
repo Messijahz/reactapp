@@ -46,7 +46,7 @@
     }
 
     p {
-      margin-block: 1rem;
+      margin-block: .5rem;
     }
 
     i {
@@ -113,6 +113,10 @@
   padding-left: 1.5rem;
 }
 
+.contact-btn {
+  margin-top: 0rem;
+}
+
 .consulation-box {
   display: flex;
   flex-direction: column;
@@ -155,7 +159,6 @@
   }
 
   select {
-    margin-bottom: 8rem;
     font-weight: 400;
     cursor: pointer;
   }
@@ -166,7 +169,7 @@
     width: 500px;
     padding: 1rem;
     border-radius: 0.5rem;
-    margin-block: 0.5rem;
+    margin-block: 1.5rem;
     border: 1px solid var(--color-gray400);
     cursor: pointer;
   }
@@ -179,7 +182,7 @@
     right: 38px;
     top: 0;
     width: 600px;
-    height: 750px;
+    height: auto;
     padding-inline: 3rem;
     text-align: left;
   }
@@ -285,4 +288,13 @@ select {
   width: 44px;
   height: 44px;
   border-radius: 0.8rem;
+}
+
+.labelcontainer {
+  margin-bottom: 3rem;
+}
+
+.message-space {
+    height: 20px;
+    margin-top: 0px;
 }

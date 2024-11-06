@@ -95,15 +95,19 @@ body {
   position: absolute;
 }
 
-.error-contact {
-  color: red;
-  font-size: 12px;
-  margin-top: .4rem;
-}
-
 .confirmation-message {
   color: var(--color-system-success);
   font-size: 12px;
   margin-top: 4px;
   position: absolute;
+}
+
+.error-contact {
+  color: var(--color-system-error);
+  font-size: 12px;
+}
+
+.confirmation-contact {
+  color: var(--color-system-success);
+  font-size: 12px;
 }

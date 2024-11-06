@@ -193,6 +193,16 @@ body {
   position: absolute;
 }
 
+.error-contact {
+  color: var(--color-system-error);
+  font-size: 12px;
+}
+
+.confirmation-contact {
+  color: var(--color-system-success);
+  font-size: 12px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -1580,7 +1590,7 @@ footer p {
     text-align: left;
   }
   #contact p {
-    margin-block: 1rem;
+    margin-block: 0.5rem;
   }
   #contact i {
     margin: 1.5rem;
@@ -1647,6 +1657,10 @@ footer p {
   padding-left: 1.5rem;
 }
 
+.contact-btn {
+  margin-top: 0rem;
+}
+
 .consulation-box {
   display: flex;
   flex-direction: column;
@@ -1684,7 +1698,6 @@ footer p {
   margin-top: 1.5rem;
 }
 .consulation-box select {
-  margin-bottom: 8rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -1694,7 +1707,7 @@ footer p {
   width: 500px;
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-block: 0.5rem;
+  margin-block: 1.5rem;
   border: 1px solid var(--color-gray400);
   cursor: pointer;
 }
@@ -1704,7 +1717,7 @@ footer p {
     right: 38px;
     top: 0;
     width: 600px;
-    height: 700px;
+    height: auto;
     padding-inline: 3rem;
     text-align: left;
   }
@@ -1810,6 +1823,15 @@ select {
   width: 44px;
   height: 44px;
   border-radius: 0.8rem;
+}
+
+.labelcontainer {
+  margin-bottom: 3rem;
+}
+
+.message-space {
+  height: 20px;
+  margin-top: 0px;
 }
 
 .toggle-switch {
