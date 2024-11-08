@@ -1,6 +1,6 @@
 import React from 'react'
 import LogoType from '../assets/pictures/Logo.svg'
-import ToggleSwitch from './ToggleSwitch.jsx'
+import ToggleSwitch from './ToggleSwitch..jsx'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import HamburgerMenu from './Hamburger.jsx'
 

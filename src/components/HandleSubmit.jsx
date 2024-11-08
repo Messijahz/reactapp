@@ -5,6 +5,7 @@ const EmailForm = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [confirmationMessage, setConfirmationMessage] = useState("");
 
+  // Nedan regex är är framtagen med hjälp av AI.
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //Validerar vad användaren matar in med en form av regular expressions.
 
   const handleChange = (e) => {

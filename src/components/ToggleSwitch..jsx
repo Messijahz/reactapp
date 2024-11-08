@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 function ToggleSwitch() { // Vi gör en funktion som sätter isActive till false.
   const [isActive, setIsActive] = useState(false);  //Håller koll på om knappen är aktiv eller inte, alltså ljust eller mörkt läge och setIsActive används för att uppdatera isActive..
 
-  const handleToggle = () => { // Skapar funktionen handleToggle som som skiftar värde på isActive när knappen trycks på (true eller false).
+  const handleToggle = () => { // Skapar funktionen handleToggle som skiftar värde på isActive när knappen trycks på (true eller false).
     setIsActive(!isActive);
   };
 

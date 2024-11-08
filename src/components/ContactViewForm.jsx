@@ -28,13 +28,13 @@ const ContactViewForm = () => {
 
     if (!formData.fullName.trim()) {
       newErrors.fullName = '* Full name is required.';
-    } else if (!/^[a-zA-Z\s]{2,}$/.test(formData.fullName)) {
+    } else if (!/^[a-öA-Ö\s\-]{2,}$/.test(formData.fullName)) {
       newErrors.fullName = '* Full name must be at least 2 characters and contain only letters and spaces.';
     }
-
+    
     if (!formData.email.trim()) {
       newErrors.email = '* Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    } else if (!/^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{2,}$/.test(formData.email)) {
       newErrors.email = '* Email is invalid.';
     }
 
@@ -43,7 +43,7 @@ const ContactViewForm = () => {
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    return Object.keys(newErrors).length === 0; //Här skapar vi en array med "keys" och om antalet keys (eller fel, alltså newErrors) är 0 så är värdet true och den går igenom utan fel. Om värdet är mer än 0 så har vi valideringsfel i koden.
   };
 
 
