@@ -47,10 +47,10 @@ const ContactViewForm = () => {
   };
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => { 
+    e.preventDefault(); // Förhindrar att sidan laddas om.
 
-    if (!validateForm()) {
+    if (!validateForm()) { //Om validateForm inte går igenom så går vi tillbaka tills användaren fyller i rätt data.
       return;
     }
 
