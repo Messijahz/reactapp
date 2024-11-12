@@ -18,12 +18,17 @@
 
 .navbar2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: auto;
   padding-block: 1rem;
   gap: 1rem;
-  font-size: 14px;
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    font-size: 14px;
+}
 }
 
 .features-link {

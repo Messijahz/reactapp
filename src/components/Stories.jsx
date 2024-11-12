@@ -20,10 +20,14 @@ const Stories = () => {
     fetchTestimonials();
   }, []);
 
-  // Fick hjälp av AI med den här kodbiten för att importera stjärnor.
+  // Fick hjälp av AI med den här kodbiten med stjärnorna för att importera dem.
   const renderStars = (starRating) => {
-    const fullStars = Array(starRating).fill(<img src={FullStar} alt="Full star" />);
-    const emptyStars = Array(5 - starRating).fill(<img src={EmptyStar} alt="Empty star" />);
+    const fullStars = Array(starRating).fill().map((_, index) => (
+      <img key={`full-${index}`} src={FullStar} alt="Full star" />
+    ));
+    const emptyStars = Array(5 - starRating).fill().map((_, index) => (
+      <img key={`empty-${index}`} src={EmptyStar} alt="Empty star" />
+    ));
     return [...fullStars, ...emptyStars];
   };
 

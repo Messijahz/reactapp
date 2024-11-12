@@ -223,12 +223,18 @@ body {
 
 .navbar2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: auto;
   padding-block: 1rem;
   gap: 1rem;
-  font-size: 14px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .navbar2 {
+    justify-content: flex-start;
+    font-size: 14px;
+  }
 }
 
 .features-link {
@@ -1618,10 +1624,17 @@ footer p {
 .contact-info-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   gap: 3rem;
-  height: 200px;
-  padding-block: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-info-container {
+    flex-direction: row;
+    align-items: start;
+    height: 200px;
+    padding-block: 2rem;
+  }
 }
 @media (min-width: 1296px) {
   .contact-info-container {
@@ -1664,14 +1677,15 @@ footer p {
 .consulation-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-fifthbg);
   color: var(--color-gray900);
   padding-inline: 1rem;
   margin: 1rem;
-  width: 550px;
+  width: 380px;
   height: 700px;
-  text-align: left;
+  text-align: center;
   border-radius: 0.5rem;
   box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
 }
@@ -1688,7 +1702,7 @@ footer p {
 .consulation-box input,
 .consulation-box select {
   background-color: white;
-  width: 500px;
+  width: 350px;
   padding: 1rem;
   border-radius: 0.5rem;
   margin-block: 0.5rem;
@@ -1704,12 +1718,38 @@ footer p {
 .consulation-box button {
   background-color: var(--color-primary);
   color: var(--color-white);
-  width: 500px;
+  width: 300px;
   padding: 1rem;
   border-radius: 0.5rem;
   margin-block: 1.5rem;
   border: 1px solid var(--color-gray400);
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .consulation-box {
+    width: 550px;
+    height: 700px;
+    text-align: left;
+  }
+  .consulation-box input,
+  .consulation-box select {
+    background-color: white;
+    width: 500px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-block: 0.5rem;
+    border: 1px solid var(--color-gray400);
+  }
+  .consulation-box button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: 500px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-block: 1.5rem;
+    border: 1px solid var(--color-gray400);
+    cursor: pointer;
+  }
 }
 @media (min-width: 1296px) {
   .consulation-box {
@@ -1749,9 +1789,17 @@ iframe {
 
 .address-container {
   display: flex;
-  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .address-container {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 @media (min-width: 1296px) {
   .address-container {
@@ -1768,6 +1816,9 @@ iframe {
 }
 
 .address-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .address-box img {
@@ -1775,9 +1826,13 @@ iframe {
   height: 20px;
   margin-right: 0.5rem;
 }
+@media (min-width: 768px) {
+  .address-box {
+    align-items: start;
+  }
+}
 
 .info-row {
-  display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
 }
@@ -1787,6 +1842,11 @@ iframe {
 .info-row span.strong {
   color: var(--color-darktheme-text);
   font-weight: 900;
+}
+@media (min-width: 768px) {
+  .info-row {
+    display: flex;
+  }
 }
 
 select {
@@ -1804,10 +1864,10 @@ select {
 
 .social-media-box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 }
-@media (min-width: 1296px) {
+@media (min-width: 768px) {
   .social-media-box {
     justify-content: flex-start;
     gap: 1rem;
@@ -1826,6 +1886,7 @@ select {
 }
 
 .labelcontainer {
+  align-items: center;
   margin-bottom: 3rem;
 }
 
@@ -1879,6 +1940,16 @@ select {
   .btn-primary {
     display: block;
   }
+}
+
+.btn-primary2 {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -2108,14 +2179,6 @@ select {
 
 .form-input {
   background-color: var(--color-input);
-}
-
-#email::-moz-placeholder {
-  color: var(--color-text600-white);
-}
-
-#email::placeholder {
-  color: var(--color-text600-white);
 }
 
 html {

@@ -144,7 +144,7 @@ const ContactViewForm = () => {
         </div>
         
 
-        <button type="submit" className="btn-primary">
+        <button type="submit" className="btn-primary2">
           Make an appointment
         </button>
       </form>
