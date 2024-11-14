@@ -28,8 +28,9 @@ const Navbar = () => {
             
             <div className="navigation">
                 <div className="navigation-tablet">
+                <p className="darkmode">Dark Mode</p>
 
-                    <ToggleSwitch />
+                <ToggleSwitch />
                     
                 </div>
                 <a id="auth-signin" href="#" className="btn-primary text-signin">

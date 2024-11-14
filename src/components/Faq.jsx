@@ -1,9 +1,8 @@
 import React from 'react'
-import ArrowDown from '../assets/pictures/arrow-down-info.svg'
-import ArrowUp from '../assets/pictures/arrow-up-info.svg'
+import { NavLink } from 'react-router-dom'
 import PhoneCallIcon from '../assets/pictures/phonecallicon.svg'
 import ChatIcon from '../assets/pictures/chaticon.svg'
-import Accordion from './Accordion'
+
 import FaqList from './FaqList'
 
 const Faq = () => {
@@ -26,20 +25,21 @@ const Faq = () => {
                             <img src={PhoneCallIcon} alt="An icon of a phone" />
                             <p>Still have  questions?</p>
                             <div className="flex-center">
-                                <a href="contact.html" className="purple-text">
+                                <NavLink className="purple-text" to="/contact"> 
                                 <span className="underlined-link">Contact us</span>
                                 <i className="fa-solid fa-arrow-right"></i>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="contact-box">
                             <img src={ChatIcon} alt="An icon of a chat bubble" />
                             <p>Don't like phone calls?</p>
                             <div className="flex-center">
-                                <a href="/contact.html" className="green-text">
+                                
+                                <NavLink className="green-text" to="/contact">
                                 <span className="underlined-link">Contact us</span>
                                 <i className="fa-solid fa-arrow-right"></i>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

@@ -1,13 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar2 = () => {
   return (
     <div className="navbar2 container">
+        
           <i className="fa-solid fa-house"></i>
-          <a href="index.html"> <p>Homepage</p></a>
-
+          <NavLink to="/home"><p>Homepage</p></NavLink>
+        
           <i className="fa-solid fa-angles-right"></i>
-          <a href="contact.html"> <p>Contact</p></a>
+          <NavLink to="/contact"><p>Contact</p></NavLink>
         </div>
   )
 }
